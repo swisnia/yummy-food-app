@@ -181,8 +181,8 @@ ul {
   object-fit: cover;
 }
 .logo{
-  margin-left: -3rem;
-  height:12rem
+  margin: 0;
+  height: 4rem;
 }
 /* buttons */
 .btn {
