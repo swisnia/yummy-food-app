@@ -1,11 +1,13 @@
 import { Favorites } from "./Favorites";
 import Landing from "./Landing";
-import Recipe from "./Recipe";
+import RecipeDetails from "./RecipeDetails";
+import Recipes from "./Recipes";
 import SharedLayout from "./SharedLayout";
 
 export {
     Landing,
     SharedLayout,
     Favorites,
-    Recipe
+    Recipes,
+    RecipeDetails
 }
