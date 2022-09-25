@@ -31,6 +31,9 @@ const Wrapper = styled.section`
     .heart-icon:hover{
         cursor: pointer;
     }
+    .filled{
+        filter: invert(17%) sepia(99%) saturate(3265%) hue-rotate(348deg) brightness(91%) contrast(87%);
+    }
 `
 
 export default Wrapper

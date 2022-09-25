@@ -42,6 +42,9 @@ const Wrapper = styled.section`
         padding: 0.5rem;
         border-radius: var(--boxRadius);
     }
+    .filled{
+        filter: invert(17%) sepia(99%) saturate(3265%) hue-rotate(348deg) brightness(91%) contrast(87%);
+    }
     @media (min-width: 900px) {
         .img-and-ingredients-container{
             grid-template-columns: 1fr 1fr;

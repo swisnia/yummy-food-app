@@ -39,7 +39,7 @@ const AppProvider = ({children}) => {
     const getRecipes = async (params) => {
         dispatch({type: GET_RECIPES_BEGIN})
         try {
-            const response = await axios.get(`${baseURL}complexSearch?apiKey=${API_KEY}&query=${params}`)
+            const response = await axios.get(`${baseURL}complexSearch?apiKey=${API_KEY}&query=${params}&number=100`)
             const recipes = response.data.results
 
             dispatch({

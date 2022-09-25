@@ -15,6 +15,8 @@ Install dependencies:
 ### `npm install react-router-dom@6`
 ### `npm install --save styled-components`
 
+Replace your spoonacular API key in .env file
+
 ## Available Scripts
 
 In the project directory, you can run:

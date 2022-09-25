@@ -6,6 +6,10 @@ const Wrapper = styled.section`
     column-gap: 1rem;
     padding: 1rem 2rem;
     max-width: 800px;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff7c;
+    border-bottom-right-radius: var(--boxRadius);
     .search-bar{
         border: 1px solid var(--secondary-600);
         border-radius: var(--boxRadius);

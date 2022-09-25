@@ -11,6 +11,23 @@ const Wrapper = styled.section`
     h4{
         padding-left: 2rem;
     }
+    .btn-scroll-up{
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        height: 3rem;
+        width: 3rem;
+        border: none;
+        border-radius: calc(50%);
+        background-color: var(--primary-500);
+    }
+    .btn-scroll-up:hover{
+        cursor: pointer;
+    }
+    .btn-scroll-up svg{
+        min-height: 1rem;
+        min-width: 1rem;
+    }
 `
 
 export default Wrapper

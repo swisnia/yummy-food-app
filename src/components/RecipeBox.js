@@ -23,7 +23,7 @@ const RecipeBox = ({id, title, img}) => {
         <div className='title-container'> 
             <h5>{title}</h5>
             {favorites.list.includes(id)
-                ?<AiFillHeart className='heart-icon' onClick={handleFavorites}/> 
+                ?<AiFillHeart className='heart-icon filled' onClick={handleFavorites}/> 
                 :<AiOutlineHeart className='heart-icon' onClick={handleFavorites}/>}
         </div>
         <img 

@@ -40,6 +40,7 @@ const RecipeDetails = () => {
         checkComments(id)
         // eslint-disable-next-line
     },[])
+    
   return (
     <Wrapper>
         <div className='img-and-ingredients-container'>
@@ -47,7 +48,7 @@ const RecipeDetails = () => {
                 <span className='title-container'>
                     <h4>{recipeDetails.title}</h4>
                     {favorites.list.includes(recipeDetails.id)
-                        ?<AiFillHeart onClick={handleFavorites}/> 
+                        ?<AiFillHeart className='filled' onClick={handleFavorites}/> 
                         :<AiOutlineHeart onClick={handleFavorites}/>}
                 </span>
                 <img 
@@ -58,9 +59,9 @@ const RecipeDetails = () => {
             <div className='recipe-info-container'>
                 <h4>Ingredients: </h4>
                 <ul>
-                    {recipeDetails.extendedIngredients && recipeDetails.extendedIngredients.map(e => {
+                    {recipeDetails.extendedIngredients && recipeDetails.extendedIngredients.map((e,index) => {
                         return (
-                            <li key={e.id} className='ingredients-container'>
+                            <li key={`ingredient${index}`} className='ingredients-container'>
                                 <BiSquareRounded /><h5> {e.original}</h5>
                             </li>
                         )
