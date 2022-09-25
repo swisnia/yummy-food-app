@@ -26,7 +26,7 @@ const initialState = {
     recipes: [],
     recipeDetails: {},
     favorites: favorites ? JSON.parse(favorites) : {list: []},
-    favoritesRecipes: [],
+    favoritesRecipes: [], 
     comments: comments ? JSON.parse(comments) : {list: []},
 }
 

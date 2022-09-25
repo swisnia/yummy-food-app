@@ -19,25 +19,23 @@ import {
 const reducer = (state, action) => {
     //GET RECIPES
     if(action.type === GET_RECIPES_BEGIN){
-        return {...state, /*isLoading: true*/}
+        return {...state, /*set loading true*/}
     }
     if(action.type === GET_RECIPES_SUCCESS){
         return {
             ...state, 
             recipes: action.payload.recipes,
-            /*isLoading: false,
-            showAlert: true,
-            alertType: 'success',
-            alertText: ''*/
+            /*set loading false,
+            show alert,
+            set alert type and text */
         }
     }
     if(action.type === GET_RECIPES_ERROR){
         return {
             ...state, 
-            /*isLoading: false,
-            showAlert: true,
-            alertType: 'danger',
-            alertText: action.payload.msg*/
+            /*set loading false,
+            show alert,
+            set alert type and text */
         }
     }
     //GET RECIPE DETAILS

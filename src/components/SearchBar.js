@@ -16,6 +16,11 @@ const SearchBar = () => {
         const params = e.target.value
         setSearchParams(params)
     }
+    const handleEnter = (e) => {
+        if (e.key === "Enter") {
+            handleSearch()
+        }
+    }
   return (
     <Wrapper>
         <input
@@ -24,6 +29,7 @@ const SearchBar = () => {
             placeholder='What do you want to eat?'
             value={searchParams}
             onChange={handleChange}
+            onKeyUp={handleEnter}
         >
         </input>
         <button 
