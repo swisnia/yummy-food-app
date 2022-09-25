@@ -14,6 +14,10 @@ const Wrapper = styled.nav `
     .nav-txt:hover{
         cursor: pointer;
     }
+    svg{
+        min-height: 2rem;
+        min-width: 2rem;
+    }
 `
 
 export default Wrapper

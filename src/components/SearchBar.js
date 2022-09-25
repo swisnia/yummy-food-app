@@ -21,7 +21,7 @@ const SearchBar = () => {
         <input
             type='text'
             className='search-bar input'
-            placeholder='search'
+            placeholder='What do you want to eat?'
             value={searchParams}
             onChange={handleChange}
         >
